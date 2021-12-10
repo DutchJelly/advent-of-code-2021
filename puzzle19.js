@@ -134,7 +134,7 @@ const findTokenIndex = (ch) => {
 const parse = (str, iRef = { i: 0 }, expectedClosingToken) => {
     if (expectedClosingToken === undefined && iRef.i > 0) return 0;
 
-    for (iRef.i; iRef.i < str.length;) {
+    while (iRef.i < str.length) {
         const [tokenIndex, isOpeningToken] = findTokenIndex(str[iRef.i]);
         iRef.i++;
         if (!isOpeningToken) {

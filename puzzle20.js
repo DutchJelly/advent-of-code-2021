@@ -132,7 +132,7 @@ const findTokenIndex = (ch) => {
 
 const autoComplete = (str, iRef = { i: 0 }, expectedClosingToken) => {
     let totalScore = 0;
-    for (iRef.i; iRef.i < str.length;) {
+    while (iRef.i < str.length) {
         const [tokenIndex, isOpeningToken] = findTokenIndex(str[iRef.i]);
         iRef.i++;
         if (!isOpeningToken) {
