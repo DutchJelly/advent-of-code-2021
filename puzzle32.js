@@ -120,10 +120,3 @@ const calculate = (packet) => {
 }
 
 console.log(`Evaluation of packet: ${calculate(packet)}`);
-
-
-
-
-
-
-

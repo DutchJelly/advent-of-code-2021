@@ -80,10 +80,3 @@ const countVersions = (packet) => {
 }
 
 console.log(`Version sum: ${countVersions(packet)}`);
-
-
-
-
-
-
-
